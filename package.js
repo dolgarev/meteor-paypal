@@ -12,7 +12,7 @@ Npm.depends({
 Package.on_use(function(api) {
 	api.versionsFrom("1.0");
 	api.use(["meteorhacks:npm"], "server");
-	api.use(["templating"], "client");
+	api.use(["templating", "underscore"], "client");
 	api.add_files("paypal.js", ["client", "server"]);
 	api.add_files(["paypal_credit_card_form.html", "paypal_credit_card_form.js"], "client");
 });
